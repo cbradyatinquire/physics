@@ -1,4 +1,0 @@
-> package
-$ exists helloscala.zip
-> clean
-$ absent helloscala.zip

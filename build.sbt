@@ -1,17 +1,16 @@
-sbtPlugin := true
+enablePlugins(org.nlogo.build.NetLogoExtension)
 
-scalaVersion := "2.12.2"
+netLogoExtName      := "graph"
 
-organization := "org.nlogo"
+netLogoClassManager := "GraphExtension"
 
-name         := "netlogo-extension-plugin"
+scalaVersion           := "2.11.7"
 
-version      := "3.2"
+scalaSource in Compile := baseDirectory.value / "src"
 
-isSnapshot   := false
+scalacOptions          ++= Seq("-deprecation", "-unchecked", "-Xfatal-warnings", "-encoding", "us-ascii")
 
-licenses  += ("Public Domain", url("http://creativecommons.org/licenses/publicdomain/"))
+netLogoVersion := "6.0.2"
 
-bintrayRepository   := "NetLogo-JVM"
+fork in run := true
 
-bintrayOrganization := Some("netlogo")
