@@ -54,6 +54,7 @@ for row in reader:
         returnval = returnval.replace("(boolean)", "Boolean")
         returnval = returnval.replace("(number)", "Number")
         returnval = returnval.replace("(list)", "List")
+        returnval = returnval.replace("(patch)", "Patch")
         ofile.write(" Syntax.")
         ofile.write(returnval.replace(" ", "").replace("(", "").replace(")", "").replace(";", "Type(), Syntax."))
         ofile.write("Type()")
@@ -79,6 +80,10 @@ for row in reader:
 
         if (outtype == "(string)"):
             ofile.write("return \"hi\";")
+            ofile.write("\n")
+
+        if (outtype == "(patch)"):
+            ofile.write("return null;")
             ofile.write("\n")
 
         if (outtype == "(list)"):
