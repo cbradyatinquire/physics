@@ -2,7 +2,7 @@ import org.nlogo.api.*;
 import org.nlogo.core.Syntax;
 import org.nlogo.core.SyntaxJ;
 
-public class GetObject implements Reporter {
+public class GetTargetRelativeXy implements Reporter {
 
 	public Syntax getSyntax() {
 		return SyntaxJ.reporterSyntax(

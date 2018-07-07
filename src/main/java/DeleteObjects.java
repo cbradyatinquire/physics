@@ -4,13 +4,13 @@ import org.nlogo.core.SyntaxJ;
 
 public class DeleteObjects implements Command {
 
-  public Syntax getSyntax() {
-    return SyntaxJ.commandSyntax(
-		new int[] {} );
-		//deletes ALL objects
-  }
+	public Syntax getSyntax() {
+		return SyntaxJ.commandSyntax(
+			new int[] { });
+	}
 
-  public void perform(Argument args[], Context context)
-      throws ExtensionException {
-  }
+	public void perform(Argument args[], Context context)
+		throws ExtensionException {
+	}
+
 }

@@ -4,13 +4,13 @@ import org.nlogo.core.SyntaxJ;
 
 public class ShowObject implements Command {
 
-  public Syntax getSyntax() {
-    return SyntaxJ.commandSyntax(
-		new int[] {Syntax.StringType()} );
-		//object name
-  }
+	public Syntax getSyntax() {
+		return SyntaxJ.commandSyntax(
+			new int[] { Syntax.StringType() });
+	}
 
-  public void perform(Argument args[], Context context)
-      throws ExtensionException {
-  }
+	public void perform(Argument args[], Context context)
+		throws ExtensionException {
+	}
+
 }

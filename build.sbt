@@ -1,8 +1,8 @@
 enablePlugins(org.nlogo.build.NetLogoExtension)
 
-netLogoExtName      := "graph"
+netLogoExtName      := "physics"
 
-netLogoClassManager := "GraphExtension"
+netLogoClassManager := "PhysicsExtension"
 
 scalaVersion           := "2.11.7"
 
